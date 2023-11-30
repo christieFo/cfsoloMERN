@@ -1,5 +1,6 @@
 // import React from 'react';
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
 function Login()
 {
@@ -48,16 +49,20 @@ function Login()
     return(
       <div id="loginDiv">
         <form onSubmit={doLogin}>
-        <span id="inner-title">PLEASE LOG IN</span><br />
-        <label for="loginName">Email:</label><br />
+        <span id="inner-title">Log In:</span><br />
+
+        <label htmlFor="loginName">Email:</label><br />
         <input type="text" id="loginName" placeholder="johnDoe@email.com" ref={(C) => loginName = C} /><br />
-        <label for="password">Password:</label><br />
+
+        <label htmlFor="password">Password:</label><br />
         <input type="password" id="loginPassword" placeholder="Password" ref={(C) => loginPassword = C} /><br />
+
         <span id="loginResult">{message}</span>
-        <input type="submit" id="loginButton" class="buttons" value = "Do It"
+        <input type="submit" id="loginButton" value = "Do It"
           onClick={doLogin} />
         </form>
         <span id="loginResult"></span>
+        <a href='/signUp'>Click here to create an Account</a>
      </div>
     );
 };

@@ -77,7 +77,7 @@ function TextBox()
             ref={ (c) => storyContent = c }></textarea>
         <br />
         
-        <button type="button" id="addStoryButton" class="buttons" 
+        <button type="button" id="addStoryButton" 
             onClick={addStory} > Add As New Story </button><br />  
         <span id="storyAddResult">{message}</span>
         {/* ref={ref => { addStoryButton = ref }} */}
