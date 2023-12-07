@@ -3,18 +3,17 @@ import React from 'react';
 import '../styles/main.css';
 
 // import PageTitle from '../components/PageTitle';
-import SignUp from '../components/SignUp';
+import Settings from '../components/Settings';
 // import EmailVer from '../components/EmailVerification'
 
-const SignUpPage = () =>
+const SettingsPage = () =>
 {
 
     return(
       <div>
-        {/* <PageTitle /> */}
-        <SignUp />
+        <Settings />
       </div>
     );
 };
 
-export default SignUpPage;
+export default SettingsPage;

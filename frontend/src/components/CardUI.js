@@ -49,18 +49,18 @@ function CardUI()
 
     };
 
-    // const searchCard = async event => 
+    // const searchTitle = async event => 
     // {
     //     event.preventDefault();
         
-	//    alert('searchCard() ' + search.value);
+	//    alert('searchTitle() ' + search.value);
 
     //    var obj = {userId:userId,search:search.value};
     //     var js = JSON.stringify(obj);
 
     //     try
     //     {
-    //         const response = await fetch('http://localhost:5000/api/searchcards',
+    //         const response = await fetch('http://localhost:5000/api/searchtitle',
     //         {method:'POST',body:js,headers:{'Content-Type': 'application/json'}});
 
     //         var txt = await response.text();
@@ -75,8 +75,8 @@ function CardUI()
     //                 resultText += ', ';
     //             }
     //         }
-    //         setResults('Card(s) have been retrieved');
-    //         setCardList(resultText);
+    //         setResults('Story(s) have been retrieved');
+    //         // setCardList(resultText);
     //     }
     //     catch(e)
     //     {

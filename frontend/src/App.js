@@ -1,20 +1,23 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import LoginPage from './pages/LoginPage';
-import CardPage from './pages/CardPage';
+import TextPage from './pages/TextPage';
 import SignUpPage from './pages/SignUpPage';
+import SettingsPage from './pages/SettingPage';
 
 function App() 
 {
   return (
+    
     <BrowserRouter>
     <Routes>
+      <Route path="/text" index element={<TextPage />} />
       <Route path="/" index element={<LoginPage />} />
-      <Route path="/cards" index element={<CardPage />} />
       <Route path="/signUp" index element={<SignUpPage />} />
+      <Route path="/viewWorks" index element={<SettingsPage />} />
     </Routes>
   </BrowserRouter>
 

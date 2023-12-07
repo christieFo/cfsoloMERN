@@ -1,0 +1,63 @@
+
+*{
+    margin:2px;
+    padding: 2px;
+}
+body {
+    background-color: mistyrose;
+    padding: 0px;
+    font-size: 13pt;
+    font-family: Arial;
+    text-align: center;
+}
+
+textarea {
+    background-color:seashell;
+    width: 70%;
+    height: 50%;
+    /* max-height: 500px; */
+    overflow-y: "scroll";
+    resize: none;
+    font-size: 14pt;
+    text-shadow: none;
+    border: 2px solid darksalmon;
+}
+textarea:focus{
+    /* outline: 0; */
+    outline-color: burlywood;
+}
+
+input {
+    font-size: 12pt;
+    border: 2px solid darksalmon;
+    background-color:seashell;
+}
+form{
+    background-color: seashell;
+    width: 30%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 25px;
+    border-radius: 20px;
+}
+#loginButton, #signUpButton, button {
+    background-color:darksalmon;
+    font-size: 12pt;
+    padding: 5px;   
+    border-radius: 3px;
+}
+
+progress {
+    padding: 0px;
+    margin: 0px;
+    /* height: 5px; */
+    width: 50%
+}
+
+
+@media screen and (max-width:500px){
+    textarea{
+        width:100%;
+        margin: 0px;
+    }
+}
